@@ -51,7 +51,7 @@
     - RGB3채널의 안저 이미지
     - Label: 혈관 mask에 대한 1채널 grayscale 이미지
 
-<p align="center"><img src="https://github.com/3n952/Blindless_AIFFELTON/assets/1.png"></p> 
+<p align="center"><img src="https://github.com/3n952/Blindless_AIFFELTON/blob/cb513ba027280a025bcab4bf0290fa040d124939/assets/1.png"></p> 
 
 - train/val/test 데이터 셋
   각 데이터 셋 마다 healthy / unhealthy 비율이 다르고, 해상도도 모두 상이함.  
