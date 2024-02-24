@@ -71,7 +71,7 @@
 - Fundus image의 3채널(RGB)에는 Noise 정보가 많이 표현됨. -> Noise 정보가 가장 표현되지 않는 Green Channel을 추출
 - 추출된 Green Channel에 CLAHE(Contrast Limited Adaptive Histogram Equalization​) 기법을 적용
 
-<p align="center"><img src="https://github.com/3n952/Blindless_AIFFELTON/assets/2.png"></p> 
+<p align="center"><img src="https://github.com/3n952/Blindless_AIFFELTON/blob/66e57618e7a9381476c5ccda32b8360cff07cc3a/assets/2.png"></p> 
   
 - outlier(붉은색을 띄는 Fundus이미지)에 대한 강건한 전처리 기법 추가
   1. 3채널 이미지에서 r 채널 픽셀분포를 확인.​
@@ -82,7 +82,7 @@
   4. 3단계의 결과는 혈관이 조금 밝게 보임. 이를 보다 뚜렷하게 하기 위해 원래의 g 채널에 CLAHE를 적용한 이미지의 픽셀 값과 합침.​
   5. 동일한 가중치로 픽셀을 합치지 않고, red channel + clahe에 더 가중치를 주고 이미지를 합성.
 
-<p align="center"><img src="https://github.com/3n952/Blindless_AIFFELTON/assets/3.png"></p> 
+<p align="center"><img src="assets/3.png"></p> 
 
 <br/>
 
