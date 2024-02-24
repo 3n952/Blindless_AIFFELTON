@@ -91,7 +91,7 @@
 
 
 ### 3.1 Experimentation Process 
-<img width="641" src="https://github.com/3n952/Blindless_AIFFELTON/assets/4.png">  
+<img width="641" src="assets/4.png">  
 
 1. **'Unet - FG/SG/AG'** => Generator Ablation study 
 2. **the others** => Model Ablatation study
@@ -104,18 +104,18 @@
 
 - **Baseline Model**: Dense Unet
   
-<p align="center"><img src="https://github.com/3n952/Blindless_AIFFELTON/assets/5.png"></p>
+<p align="center"><img src="assets/5.png"></p>
 
 <br/>
 
 1. Full sized Generator(FG): 정해진 크기로 resize
-<p align="center"><img src="https://github.com/3n952/Blindless_AIFFELTON/assets/6.png"></p>
+<p align="center"><img src="assets/6.png"></p>
 <br/>
 3. Slice sized Generator(SG): 전체 이미지를 1024, 1024로 resize 시킨 후 512, 512사이즈로 이미지를 잘라 patches들을 구성
-<p align="center"><img src="https://github.com/3n952/Blindless_AIFFELTON/assets/7.png"></p>
+<p align="center"><img src="assets/7.png"></p>
 <br/>
 5. Adaptive sized Generator(AG): 각 이미지를 512, 512 사이즈로 이미지를 잘라 patches를 구성한 후, 학습 시에 batch size에 맞게 이미지 patch를 random하게 구성
-<p align="center"><img src="https://github.com/3n952/Blindless_AIFFELTON/assets/8.png"></p>
+<p align="center"><img src="assets/8.png"></p>
 <br/>
 
 ### Quantitative Evaluation
@@ -124,7 +124,7 @@
 - Test Dataset에 대한 정량 평가 결과는 FG와 SG사이에 큰 차이가 없음.​   
 - 반면 AG는 전반적으로 좋지 않은 점수를 기록.
 
-<p align="center"><img src="https://github.com/3n952/Blindless_AIFFELTON/assets/9.png"width="600" height="400"></p>
+<p align="center"><img src="assets/9.png"width="600" height="400"></p>
 
 
 ### Qualitative Evaluation
@@ -135,7 +135,7 @@
 - FG와 SG는 정성적 평가에서도 큰 차이가 없음
 - 두 Generator 모두 비교적 굵은 혈관과 미세 혈관을 잘 구현함
 
-<p align="center"><img src="https://github.com/3n952/Blindless_AIFFELTON/assets/10.png"width="600" height="400"></p>
+<p align="center"><img src="assets/10.png"width="600" height="400"></p>
 
 
 <br/>
@@ -146,7 +146,7 @@
 - 혈관을 굵게 표현한 다는 점이 sensitivity를 높이면서 동시에 specificity를 낮추는 요소로 작용했다고 판단
 ​- IOU 지표 또한 많이 차이나는 것으로 미뤄보아 AG의 전반적인 성능이 많이 떨어짐
 
-<p align="center"><img src="https://github.com/3n952/Blindless_AIFFELTON/assets/11.png"width="600" height="400"></p>
+<p align="center"><img src="assets/11.png"width="600" height="400"></p>
 
 
 <br/>
